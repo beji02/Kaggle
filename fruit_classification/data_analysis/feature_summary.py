@@ -36,6 +36,7 @@ def get_summary_of_output_feature(data: pd.DataFrame) -> pd.DataFrame:
 if __name__ == '__main__':
     data = pd.read_excel(DATA_PATH)
     pd.set_option('display.max_colwidth', None)
+    pd.set_option('display.float_format', '{:.6f}'.format)
 
     summary = (
         "Input features summary:\n"
